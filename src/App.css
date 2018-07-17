@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.App{
+  Height: 1000px;
+  /* background: rgb(43, 41, 41); */
+}
+.Header {
+  background:url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 50%;
+  
+  }
+ .navBig{
+   display: none;
+ }
+  
+nav{
+ background: rgb(43, 41, 41);
+ height: 50px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 20px;
+ position: fixed;
+ top: 0;
+ width: 100%;
+  }
+
+
+.hamburger{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  background-color: rgb(233, 211, 86);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-family: helvetica;
+}
+.footer{
+  background: grey;
+  min-height: 50%;
+  color:  rgb(43, 41, 41);
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  
+}
+.services{
+  font-size: 50px;
+  font-family: Helvetica;
+}
+
+.lorem{
+  font-size: 16px;
+  font-family: Helvetica;
+  font-style: italic;
+
+}
+.drawer{
+  transform: translate(0px, 0px);
+  position: fixed; 
+  top: 50px;
+  height: 50px;
+  padding: 0px;
+  width: 100%;
+  transition: 1s;
+}
+
+.menuItem{
+  color:white;
+  background:  rgb(43, 41, 41);
+}
+.open{
+  transform: translate(0px, -150px);
+  background: grey;
+  transition: 1s;
+}
+
+.introdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 450px;
+}
+
+.start{
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(233, 211, 86);
+  font-size: 20px;
+}
+
+.welcome{
+  font-size: 22px;
+  font-family: Helvetica;
+  font-style: italic;
+  color: rgb(243, 233, 233);
+  box-sizing: border-box;
+}
+
+.greeting{
+  font-size: 60px;
+  font-family: Helvetica;
+  color: rgb(243,233,233);
+  box-sizing: border-box;
+ text-align: center;
+ padding: 20px;
+}
+
+.button2{
+  font-size: 26px;
+  background-color: rgb(233, 211, 86);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-family: helvetica;
+  padding: 20px 14px;
+}
+
+@media (min-width: 768px){
+  .navBig{
+    display: none;
+  }
+
+  .Header{
+    height: 100%
+  }
+  .footer{
+    display: none;
+  }
+  .introdiv{
+    padding: 20px;
+    height: 900px;
+  }
+  .welcome{
+  font-size: 45px;
+  }
+  .greeting{
+    font-size: 70px;
+    font-weight: bolder;
+    padding: 10px 30px;
+  }
+  
+}
+@media (min-width: 992px){
+ 
+  .navBig{
+ display: flex;
+ flex-direction:row;
+ justify-content: space-around;
+ align-items: flex-end;
+ align-content: stretch;
+ padding: 0 40px;
+ width: 100%;
+ font-size: 20px;
+ margin: 16px;
+  }
+.menuItem{
+  background: transparent;
+  font-size: 15px;
+}
+
+  .drawer{
+    display:none;
+  }
+  .open{
+    display: none;
+  }
+  .hamburger{
+    display: none;
+  }
+  nav{
+    background: transparent;
+    height: 80px;
+  }
+  .start{
+  font-weight:normal;
+    font-size: 25px;
+    width: 40%;
+  margin:40px;
+   
+  }
+ 
+}
